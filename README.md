@@ -15,3 +15,14 @@ Lua was originally designed in 1993 as a language for extending software applica
 - function
 - thread
 - table  
+  
+## Operators
+- __Arthmetic (+, -, *, /, ^, %)__  
+- **Relational (<, >, <=, >=, ==, ~=)**
+  - Note: not equal ~= in Lua  
+- __Logical (and, not, or)__
+- **Other**
+  - Concatenation
+    - "Hi" .."there"
+  - Length
+    - #suckers
