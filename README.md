@@ -39,3 +39,6 @@ __end__
 - **Repeat - repeat** something __until__ boolean expression  
 - **For (Numberic) - for** variable = start, end, step __do__ something **end**  
 - **For (Generic) - for** k, v in iterator __do__ something **end**  
+  
+## Blocks and Scope
+*By default, all variables in Lua are globally scoped*
