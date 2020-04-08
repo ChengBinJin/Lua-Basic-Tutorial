@@ -25,4 +25,11 @@ Lua was originally designed in 1993 as a language for extending software applica
   - Concatenation
     - "Hi" .."there"
   - Length
-    - #suckers
+    - #suckers  
+  
+## If, Then, Else
+**if** boolean expresion __then__  
+ -- do something  
+**else**  
+ -- do something else  
+__end__
