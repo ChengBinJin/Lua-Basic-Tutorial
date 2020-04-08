@@ -32,4 +32,10 @@ Lua was originally designed in 1993 as a language for extending software applica
 &nbsp; &nbsp; &nbsp; &nbsp; -- do something  
 **else**  
 &nbsp; &nbsp; &nbsp; &nbsp; -- do something else  
-__end__
+__end__  
+  
+## Loops
+- **While - while** boolean expression __do__ something **end**  
+- **Repeat - repeat** something __until__ boolean expression  
+- **For (Numberic) - for** variable = start, end, step __do__ something **end**  
+- **For (Generic) - for** k, v in iterator __do__ something **end**  
