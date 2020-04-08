@@ -2,10 +2,10 @@ print("Guess a number")
 math.randomseed(os.time())
 -- math.random()
 math.random()
-number = math.random(100)
+local number = math.random(100)
 
 while number ~= answer do
-	answer = io.read("*n")
+	local answer = io.read("*n")
 
 	if answer < number then
 		print("Too low")
@@ -20,4 +20,4 @@ while number ~= answer do
 end
 
 print("You got it")
-
+print("answer", answer)
