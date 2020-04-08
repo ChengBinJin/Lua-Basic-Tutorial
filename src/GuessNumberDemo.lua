@@ -5,7 +5,6 @@ math.random()
 number = math.random(100)
 
 while number ~= answer do
-
 	answer = io.read("*n")
 
 	if answer < number then
@@ -13,10 +12,12 @@ while number ~= answer do
 	elseif answer > number then
 		print("Too high")
 	else
-		print("You got it")
+
+		break
 	end
+
+	print("Guess again")
 end
 
+print("You got it")
 
-print("number: ", number)
-print("anser: ", answer)
