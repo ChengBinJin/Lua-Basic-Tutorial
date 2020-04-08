@@ -29,7 +29,7 @@ Lua was originally designed in 1993 as a language for extending software applica
   
 ## If, Then, Else
 **if** boolean expresion __then__  
- -- do something  
+&nbsp; &nbsp; &nbsp; &nbsp; -- do something  
 **else**  
- -- do something else  
+&nbsp; &nbsp; &nbsp; &nbsp; -- do something else  
 __end__
