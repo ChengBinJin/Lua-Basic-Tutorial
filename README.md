@@ -41,4 +41,10 @@ __end__
 - **For (Generic) - for** k, v in iterator __do__ something **end**  
   
 ## Blocks and Scope
-*By default, all variables in Lua are globally scoped*
+*By default, all variables in Lua are globally scoped*  
+  
+## Variadic Functions
+**function countStringLengths(...)**  
+&nbsp; &nbsp; &nbsp; &nbsp; --do stuff  
+&nbsp; &nbsp; &nbsp; &nbsp; a, b, c = ...  
+**end**  
