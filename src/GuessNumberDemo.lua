@@ -1,23 +1,32 @@
-print("Guess a number")
-math.randomseed(os.time())
--- math.random()
-math.random()
-local number = math.random(100)
+function getRandomNumber(maxValue)
+	-- math.random()  comment one line
+	math.randomseed(os.time())
+	math.random()
+	return math.random(maxValue)
+end
 
-while number ~= answer do
-	local answer = io.read("*n")
+function handleGuesses(...)
+	lowMessage, highMessage, number = ...
 
-	if answer < number then
-		print("Too low")
-	elseif answer > number then
-		print("Too high")
-	else
+	while number ~= answer do
+		local answer = io.read("*n")
 
-		break
+		if answer < number then
+			print(lowMessage)
+		elseif answer > number then
+			print(highMessage)
+		else
+			break
 	end
 
 	print("Guess again")
 end
 
+end
+
+
+local number = getRandomNumber(100)
+print("Guess a number")
+handleGuesses("Too low", "Too high", number)
+
 print("You got it")
-print("answer", answer)
