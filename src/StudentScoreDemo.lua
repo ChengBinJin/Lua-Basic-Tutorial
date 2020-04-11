@@ -1,4 +1,4 @@
-local grades = {}
+local grades = {Mary = "100", Teacher="10"}
 while true do
 	print("Enter student name (q to quit)")
 	local name = io.read()
@@ -11,6 +11,7 @@ while true do
 	local score = io.read("*n", "*l")
 
 	grades[name] = score
+
 end
 
 print("Printing grades!")
@@ -19,3 +20,5 @@ for k, v in pairs(grades) do
 	print("Grade:")
 	print(k, v)
 end
+
+print(grades.Teacher, grades["Teacher"])
