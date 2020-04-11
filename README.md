@@ -48,3 +48,8 @@ __end__
 &nbsp; &nbsp; &nbsp; &nbsp; --do stuff  
 &nbsp; &nbsp; &nbsp; &nbsp; a, b, c = ...  
 **end**  
+  
+## Tables
+**Ex. (1):** grades = {1, 2, 3}  
+**Ex. (2):** grades = {"John" = 89, "Steam" = 90}  
+**Note:** the index of tables in Lua starts from 1 not 0  
