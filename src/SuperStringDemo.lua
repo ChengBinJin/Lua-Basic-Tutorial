@@ -17,7 +17,14 @@ end
 meta.__add = SS.add
 
 
+meta.__index = function(table, key)
+	if key == "reverse" then
+		return string.reverse(table.s)
+	end
+end
+
 firstName = SS.new("Bill")
 lastName = SS.new("Gates")
 
 print(firstName + lastName)
+print(lastName.reverse)
