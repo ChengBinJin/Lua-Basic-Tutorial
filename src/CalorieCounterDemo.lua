@@ -24,14 +24,14 @@ end
 function HealthMonitor:didReachGoal()
 	local goalsReached = 0
 	if self.count >= self.goal then
-		print("Calorie goal of " .. self.count .. "rached")
+		print("Calorie goal of " .. self.count .. " rached")
 		goalsReached = goalsReached + 1
 	else
 		print("Calorie goal not reached, yet")
 	end
 
 		if self.steps >= self.stepGoal then
-		print("Step goal of " .. self.stepGoal .. "rached")
+		print("Step goal of " .. self.stepGoal .. " rached")
 		goalsReached = goalsReached + 1
 	else
 		print("Step goal not reached, yet")
@@ -39,3 +39,10 @@ function HealthMonitor:didReachGoal()
 
 	return goalsReached >= 2
 end
+
+return {
+	CalorieCounter = CalorieCounter,
+	HealthMonitor = HealthMonitor,
+}
+
+
