@@ -64,3 +64,12 @@ __end__
   - ...  
 - **__call**  
 - **__tostring**
+  
+## Overview of Standard Libraries  
+- Basic  
+- Package  
+- String  
+- Table  
+- I/O  
+- Operating System  
+- Debug  
