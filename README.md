@@ -1,5 +1,5 @@
 # Lua-Basic-Tutorial
-This tutorial follows John Sonmez [Youtube tutorial](https://www.youtube.com/watch?v=jwn1Vkez7og&list=PLysdvSvCcUhZ3d2AEF4XVAdAyQSBxLNRT&index=1) for basics of Lua.
+This tutorial follows John Sonmez [Youtube tutorial](https://www.youtube.com/watch?v=jwn1Vkez7og&list=PLysdvSvCcUhZ3d2AEF4XVAdAyQSBxLNRT&index=1) and 游戏大师课 [Youtuber tutorial](https://www.youtube.com/watch?v=Cafp02a9Omk&list=PL0luF_aDUOor6sYMHO9qNv4OjH8aNs_8x&index=1) for basics of Lua.
   
 ## What is the Lua?
 **Lua** is a lightweight, high-level, multi-paradigm programming language designed primarily for embedded use in applications. Lua is cross-platform, since the interpreter of compiled bytecode is writtten in ANSI C, and Lua has a relatively simple C API to embed it into applications.  
@@ -73,3 +73,13 @@ __end__
 - I/O  
 - Operating System  
 - Debug  
+
+## Keywords  
+|           |           |           |           |  
+| --------- | --------- | --------- | --------- |
+|     and   |   break   |     do    |    else   |  
+|   elseif  |    end    |   false   |    for    |  
+|  function |    if     |     in    |   local   |  
+|     nil   |    not    |     or    |   repeat  |  
+|   return  |   then    |    true   |   until   |
+|    while  |           |           |           |
