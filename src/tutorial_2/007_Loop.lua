@@ -62,12 +62,28 @@ until (condition)
 
 --]]
 
-a = 1
+--[[a = 1
 repeat
 	print(a)
 	a = a + 1
-until (a>10)
+until (a>10)--]]
 
+
+--[[for i = 1, 10 do
+	for j=1, i do
+		print(i)
+	end
+end--]]
+
+i = 1
+while i <= 10 do
+	j = 1
+	while j <= i do
+		print(i)
+		j = j + 1
+	end
+	i = i + 1
+end
 
 
 
