@@ -41,3 +41,22 @@ end
 
 a1, a2, a3, a4, a5 = temp()
 print(a1, a2, a3, a4, a5)
+
+print()
+
+function test(...)
+	-- print(arg[1])
+	res = 0
+	local arg = {...}
+
+	for k, v in pairs(arg) do -- arg 最后包含参数的个数
+		res = res + v
+	end
+	-- #arg 取得参数的个数 #'hello'
+	print('res: ', res / #arg)
+end
+
+test()
+test(1)
+test(1, 2)
+test(1, 2, 3)
