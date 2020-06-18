@@ -61,7 +61,7 @@ mytable[5] = "Lua"
 print(mytable[1])
 print(mytable[5])
 print(newtable[5])
---]]
+
 
 
 mytable = {"Lua", "Java", "C#", "C++"}  -- 普通表
@@ -94,10 +94,39 @@ r2 = newtable + mytable
 for k, v in pairs(r1) do
 	print(k, v)
 end
+--]]
 
 
+mytable = {"Lua", "Java", "C#", "C++"} --普通表
 
+mymetatable = {
+	__add = function(tab, newtab)
+		local max_index = 0
 
+		for k, v in pairs(tab) do
+			if (k > max_index) then
+				max_index = k
+			end
+		end
+
+		for k, v in pairs(newtab) do
+			max_index = max_index + 1
+			table.insert(tab, max_index, v)
+		end
+
+		return tab
+
+	end,
+
+	__call = function(tab, arg1, arg2, arg3, arg4)
+		print(arg1, arg2, arg3, arg4)
+		return "siki"
+	end
+}
+
+mytable = setmetatable(mytable, mymetatable)
+v = mytable(34, 1, 2, 3)
+print(v)
 
 
 
