@@ -97,7 +97,7 @@ end
 --]]
 
 
-mytable = {"Lua", "Java", "C#", "C++"} --普通表
+mytable = {"Lua", "Java", "C#", "C++", "Python"} --普通表
 
 mymetatable = {
 	__add = function(tab, newtab)
@@ -121,6 +121,16 @@ mymetatable = {
 	__call = function(tab, arg1, arg2, arg3, arg4)
 		print(arg1, arg2, arg3, arg4)
 		return "siki"
+	end,
+
+	__tostring = function(mytable)
+		local str = ""
+
+		for k, v in pairs(mytable) do
+			str = str..v..", "
+		end
+
+		return str
 	end
 }
 
@@ -128,6 +138,7 @@ mytable = setmetatable(mytable, mymetatable)
 v = mytable(34, 1, 2, 3)
 print(v)
 
+print(mytable)
 
 
 
